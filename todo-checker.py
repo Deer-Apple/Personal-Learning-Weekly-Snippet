@@ -47,7 +47,10 @@ def countLine(text):
     text = text.lower()
     return len(text.split())
 
-def writeOneTypeTODO(file, todos):
+def writeOneTypeTODO(file, todos, priority):
+    if not todos:
+        return
+    file.write('#### ' + priority +'\n')
     for todo in todos:
         file.write('- ' + todo + '\n')
 
@@ -69,12 +72,9 @@ for root, dirs, files in os.walk(".", topdown=True):
         totalTODOs[0].extend(todos[0])
         totalTODOs[1].extend(todos[1])
         totalTODOs[2].extend(todos[2])
-outfile.write('#### P0\n')
-writeOneTypeTODO(outfile, totalTODOs[0])
-outfile.write('#### P1\n')
-writeOneTypeTODO(outfile, totalTODOs[1])
-outfile.write('#### P2\n')
-writeOneTypeTODO(outfile, totalTODOs[2])
+writeOneTypeTODO(outfile, totalTODOs[0], "P0")
+writeOneTypeTODO(outfile, totalTODOs[1], "P1")
+writeOneTypeTODO(outfile, totalTODOs[2], "P2")
 writeWordCountAndOtherInfo(outfile, totalWords)
 outfile.close()
 # 4. commit changes in Git
