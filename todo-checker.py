@@ -76,6 +76,7 @@ writeOneTypeTODO(outfile, totalTODOs[1])
 outfile.write('#### P2\n')
 writeOneTypeTODO(outfile, totalTODOs[2])
 writeWordCountAndOtherInfo(outfile, totalWords)
+outfile.close()
 # 4. commit changes in Git
 subprocess.run(["git", "add", "."])
 now = datetime.now()
