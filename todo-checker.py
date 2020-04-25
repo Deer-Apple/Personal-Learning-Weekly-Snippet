@@ -53,9 +53,9 @@ def writeOneTypeTODO(file, todos):
 
 def writeWordCountAndOtherInfo(file, count):
     file.write('### Other Info\n')
-    file.write('Total words: ' + str(count) + '\n')
-    file.write('P0: will do in the following weeks\n')
-    file.write('P1: will do before starting to learn other topics\n')
+    file.write('Total words: ' + str(count) + '\n\n')
+    file.write('P0: will do in the following weeks\n\n')
+    file.write('P1: will do before starting to learn other topics\n\n')
     file.write('P2: one potential new topic\n')
 
 totalWords = 0
@@ -80,6 +80,6 @@ outfile.close()
 # 4. commit changes in Git
 subprocess.run(["git", "add", "."])
 now = datetime.now()
-timeString = now.strftime("%Y-%m-%d %H:%M:%S")
+timeString = now.strftime("%Y-%m-%d %H:%M")
 subprocess.run(["git", "commit", "-m", "auto-refresh TODO Debt " + timeString])
 subprocess.run(["git", "push", "origin", "master"])

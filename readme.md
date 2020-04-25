@@ -15,6 +15,9 @@ This is a personal snippet for weekly recap and self-improvement only. Cannot gu
 - Mockito-like library for JS
 ### Other Info
 Total words: 1100
+
 P0: will do in the following weeks
+
 P1: will do before starting to learn other topics
+
 P2: one potential new topic
