@@ -26,7 +26,6 @@
         }
     }
     ```
-    - **AI: read book <架构探险 从零开始写javaweb框架> to implement a lite version Java framework.**
 
 - ThreadLocal
     - One common use case for ThreadLocal is for Database connection.
@@ -68,5 +67,4 @@
 - Transient
     - Every field marked as `transient` will not be serialized. You use the `transient` keyword to indicate to the jvm that the `transient` variable is not part of the persistent state of an object. Which means we cannot retrieve that value after deseralization.
 
-- Other
-    - **AI: finish draft of dbutils-lite and implement part of them.**
+TODO(P1): read book <架构探险 从零开始写javaweb框架> to implement a lite version Java framework.
