@@ -6,9 +6,7 @@
             - How Reflection works in Java (source code)
 
 
-TODO(P0): script to monitor TODO in snippets.
-
-TODO(P0): write "how it works" for above topics as weekly snippet.
+TODO(P0): write "how it works" for above topics (how to test & Mockito) as weekly snippet.
 
 TODO(P1): Add "how it works" for dbutils-lite.
 

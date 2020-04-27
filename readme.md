@@ -5,8 +5,7 @@ This is a personal snippet for weekly recap and self-improvement only. Cannot gu
 
 ### TODO Debt
 #### P0
-- script to monitor TODO in snippets.
-- write "how it works" for above topics as weekly snippet.
+- write "how it works" for above topics (how to test & Mockito) as weekly snippet.
 #### P1
 - read book <架构探险 从零开始写javaweb框架> to implement a lite version Java framework.
 - Add "how it works" for dbutils-lite.
@@ -14,7 +13,7 @@ This is a personal snippet for weekly recap and self-improvement only. Cannot gu
 #### P2
 - Mockito-like library for JS
 ### Other Info
-Total words: 1100
+Total words: 2163
 
 P0: will do in the following weeks
 
