@@ -13,7 +13,7 @@ This is a personal snippet for weekly recap and self-improvement only. Cannot gu
 #### P2
 - Mockito-like library for JS
 ### Other Info
-Total words: 2163
+Total words: 2170
 
 P0: will do in the following weeks
 
