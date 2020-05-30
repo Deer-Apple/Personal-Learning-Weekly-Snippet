@@ -176,7 +176,7 @@
                 try {
                     m1 = Class.forName("java.lang.Object").getMethod("equals", Class.forName("java.lang.Object"));
                     m2 = Class.forName("java.lang.Object").getMethod("toString");
-                    m3 = Class.forName("UserService").getMethod("playMovie");
+                    m3 = Class.forName("Cinema").getMethod("playMovie");
                     m0 = Class.forName("java.lang.Object").getMethod("hashCode");
                 } catch (NoSuchMethodException var2) {
                     throw new NoSuchMethodError(var2.getMessage());

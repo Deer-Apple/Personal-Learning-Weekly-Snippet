@@ -6,8 +6,6 @@
             - How Reflection works in Java (source code)
 
 
-TODO(P0): write "how it works" for above topics (how to test & Mockito) as weekly snippet.
-
 TODO(P1): Add "how it works" for dbutils-lite.
 
 TODO(P1): Add or describe how to test dbutils-lite.
