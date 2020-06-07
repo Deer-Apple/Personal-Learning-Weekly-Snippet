@@ -1,6 +1,6 @@
 ### Week June 7, 2020
 
-- Steps for building a simple Java Web framework (IoC)
+- Steps for building a simple Java Web framework
     - Projet goal (version 1)
         ```Java
         @Controller
