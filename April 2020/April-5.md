@@ -32,7 +32,7 @@
         - It is too expensive if we request a new database connection every time we want to execute a sql query. That's why we use a database connection pool to cache database connections (Apache DBCP).
         - We also want to make sure in one single thread, we always use the same connection in order to maintain the sql transaction.
     - Implementation
-        - The secert is in `Thead` class. There is a field called `threadLocals` with type `ThreadLocalMap` which is actually a hashmap of `<threadlocal, value>`
+        - The secret is in `Thead` class. There is a field called `threadLocals` with type `ThreadLocalMap` which is actually a hashmap of `<threadlocal, value>`
         - Every time we can `get/set` method on `ThreadLocal` object, it will first get current thread's map and search entry in it.
         ```Java
         Thread t = Thread.currentThread();
@@ -45,6 +45,8 @@
     - What if we have several `ThreadLocal` objects in one class?
         - First, `threadLocals` in every thread is a hashmap (more precisely an array of entry whose key is threadlocal object)
         - Second, everytime a `ThreadLocal` object is constructed, it will also initialize a final field called `threadLocalHashCode` which is then used to calculate the corresponding index in the hashmap array.
+    - Important Note:
+        - When you are using a static field in your class, consider whether you need to distinguish this value between different threads, if yes, you probably want to use `ThreadLocal`
 
 - WeekReference
     - An object with only weekreferences will be cleared by Grabage Collector.
